@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elgato | Stream Setups</title>
+
+    <!-- web icon -->
+    <link rel="icon" href="/assets/elgato.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/output.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="py-3 bg-white border border-b-2 z-10">
+        <div class="container flex items-center justify-start">
+
+            <div class="flex py-3 items-center">
+                <!-- Logo -->
+                <a href="">
+                    <img src="/assets/logo.svg" alt="Logo" class="w-full h-full">
+                </a>
+
+            </div>
+
+
+            <!-- Search bar -->
+            <div class="w-full max-w-xl flex items-start mr-96 relative text-gray-700 group">
+                <span
+                    class="absolute left-4 top-4 transition-all duration-300 group-hover:left-4 group-hover:top-4 group-hover:text-gray-500">
+                    <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+                </span>
+                <input type="text" placeholder="Search"
+                    class="w-0 opacity-0 border-primary border border-r-0 rounded-l-full pl-12 py-3 focus:border-red-900 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                <button
+                    class="bg-primary h-12 rounded-r-full border border-primary text-white px-4 opacity-0 transition-all duration-500 group-hover:opacity-100">Search</button>
+            </div>
+
+
+            <!-- Icon -->
+            <div class="items-center flex space-x-4 ms-96">
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+
+
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="">
+        <div class="container flex">
+            <!-- all categories -->
+            <div class="bg-black px-8 py-4 rounded-b-md
+             items-center cursor-pointer relative group pt-10 z-30">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white text-xl">All Categories</span>
+
+                <!-- Dropdown -->
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 group-hover:transition duration-300 
+                    invisible group-hover:visible rounded-b-xl">
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-headphones" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Wave Audio</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-video" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">FaceCam</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-desktop" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Setups</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Navbar link -->
+            <div class="flex justify-between items-center flex-grow pl-1 pt-8">
+                <div class="flex items-center space-x-6 capitalize">
+                    <!-- Home link -->
+                    <a href="/src/index.html" class="ms-10 text-xl text-gray-900 relative overflow-hidden group">
+                        Home
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Setups link (active) -->
+                    <a href="setup.html" class="text-xl text-gray-900 relative overflow-hidden group active:text-black">
+                        Setups
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Marketplace link -->
+                    <a href="/src/shop.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Marketplace
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Contact link -->
+                    <a href="contact.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- Login/Register button -->
+                <a class="text-primary hover:bg-primary font-oswald text-lg tracking-wide border-2 rounded-md border-primary hover:bg-opacity-10 py-3 px-5 transition"
+                    href="login.html">Login/Register</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Hero Section -->
+    <header class="bg-white relative w-full h-full flex flex-col items-center justify-center text-center">
+
+
+
+        <div class="absolute inset-0 bg-white"></div>
+
+        <section class="relative w-full h-screen overflow-hidden">
+
+            <div
+                class="absolute top-0 left-0 w-full h-full flex justify-center pt-32 text-black font-oswald text-4xl z-10 uppercase">
+                endless performance
+            </div>
+
+            <div
+                class="absolute top-0 left-0 w-full h-full flex justify-center pt-44 text-primary font-oswald text-7xl font-bold z-10 animate-fade-down">
+                ENKANOMIYA SETUPS
+            </div>
+
+
+
+            <!-- BG moving image -->
+
+            <div class="absolute bottom-0 left-0 w-full h-90 flex items-end justify-center overflow-hidden">
+                <img class="w-full h-full object-cover animate-fade-up" src="/assets/bg-move.jpg" alt="Image 1">
+            </div>
+
+            <!-- fade -->
+            <div class="absolute bottom-0 left-0 w-full h-72 bg-gradient-to-t from-white to-transparent">
+            </div>
+        </section>
+    </header>
+
+    <!-- text -->
+    <section id="explore" class="py-40 text-center bg-white">
+
+
+    </section>
+
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+
+
+                <!-- START 1st Setup -->
+                <div class="relative group md:w-1/2 mb-8 md:mb-0">
+                    <img src="/assets/setup.png" alt="About Image"
+                        class="w-full h-auto transition-transform duration-300 transform group-hover:scale-105">
+
+                    <!-- Circles Container -->
+                    <!-- Wave -->
+                    <div class="absolute inset-0  mt-72 ms-96">
+                        <!-- circle 1 -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Light -->
+                    <div class="absolute inset-0  mt-36 ms-16">
+                        <!-- circle 1 -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- Face Cam -->
+                    <div class="absolute inset-0 mt-96 ms-96">
+                        <!-- circle 1 -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Keyboard -->
+                    <div class="absolute inset-0 mt-16 ms-72">
+                        <!-- circle 1 -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-5xl font-semibold pb-3 inline-block relative">CRONICLE SETUP
+                        <div
+                            class="inline-block bg-primary text-white text-lg px-4 py-2 rounded-tl-full rounded-tr-full rounded-br-full ml-3 animate-bounce">
+                            $912K USD
+                        </div>
+                    </h2>
+                    <br>
+                    <span class="text-primary text-2xl opacity-50 font-oswald tracking-wide">TOUCH THE IMAGE</span>
+                    <p class="text-lg text-gray-700 pt-4">
+                        Starting off your streaming career? Pick out our most best selling setup for beginners! Cronicle
+                        setup includes many Elgato gadgets that can enhance the quality of your streams. With wave
+                        around 2459 particles that'll catch
+                        any sound and decrease unnecessary ones. This setup consist;
+                    </p>
+
+                    <div class=" pb-16">
+
+                        <table class="table-auto border-collapse w-full text-left text-gray-800 text-sm mt-6">
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Wave 3</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Condenser USB Microphone</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Anti-Clipping, Wave Link
+                                    Software, Built-in Pop Filter</td>
+
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">SteelSeries Apex Pro
+                                    Keyboard</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Adjustable OmniPoint Mechanical
+                                </td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Custom Actuation, OLED Smart
+                                    Display, RGB Backlight</td>
+
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Logitech StreamCam</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">1080p @ 60FPS</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Auto-Framing, USB-C, AI Face
+                                    Tracking</td>
+
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Elgato Key Light Air</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Brightness 1400 lumens</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Adjustable Color Temperature,
+                                    App Control, Edge-Lit LED</td>
+
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+            <!-- End 1st Setup -->
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Second About -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-10">
+
+                <div class="md:w-1/2 md:pl-8">
+                    <h2 class="text-5xl font-semibold pb-3 inline-block relative">ARCANIST SETUP
+                        <div
+                            class="inline-block bg-primary text-white text-lg px-4 py-2 rounded-tl-full rounded-tr-full rounded-br-full ml-3  animate-bounce">
+                            $1299K USD
+                        </div>
+                    </h2>
+                    <br>
+                    <span class="text-primary text-2xl opacity-50 font-oswald tracking-wide">TOUCH THE IMAGE</span>
+                    <p class="text-lg text-gray-700 pt-4">
+                        Elevate your content creation experience with the ultimate Arcanist Setup. Designed for both
+                        beginners and pros, this package includes top-tier gear tailored for streaming, gaming, and
+                        video production. Featuring noise reduction, high-fidelity visuals, and ergonomic design, this
+                        setup ensures peak performance. The package includes:
+                    </p>
+
+                    <div class="pb-16">
+                        <table class="table-auto border-collapse w-full text-left text-gray-800 text-sm mt-6">
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Razer Seiren X</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Professional Streaming
+                                    Microphone</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Supercardioid Pickup, Built-in
+                                    Shock Mount, USB Plug & Play</td>
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Corsair K100 RGB Keyboard
+                                </th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Mechanical Gaming Keyboard</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">AXON Hyper-Processing,
+                                    Customizable Macros, Per-key RGB</td>
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Sony Alpha ZV-E10</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">4K Streaming Camera</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Interchangeable Lens, Real-time
+                                    Eye Autofocus, USB-C Streaming</td>
+                            </tr>
+
+                            <tr>
+                                <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Key Light Pro</th>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">Premium Streaming Light</td>
+                                <td class="border border-gray-300 py-2 px-4 font-medium">1800 Lumens, Smart App Control,
+                                    Adjustable Brightness & Color</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- START 2nd Setup -->
+                <div class="relative group md:w-1/2 mb-8 md:mb-0">
+                    <img src="/assets/setup2.png" alt="About Image"
+                        class="w-full h-auto transition-transform duration-300 transform group-hover:scale-105">
+
+                    <!-- Circles Container -->
+                    <!-- Microphone -->
+                    <div class="absolute inset-0 mt-72 ms-96">
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Light -->
+                    <div class="absolute inset-0 mt-36 ms-16">
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Camera -->
+                    <div class="absolute inset-0 mt-96 ms-96">
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+
+                    <!-- Keyboard -->
+                    <div class="absolute inset-0 mt-16 ms-72">
+                        <div
+                            class="w-8 h-8 rounded-full bg-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <div class="w-12 h-10 rounded-full bg-white opacity-50 animate-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Other setup -->
+
+
+    <!-- end other setup -->
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-300">
+        <div class="container grid grid-cols-3">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/assets/logo.svg" alt="">
+
+
+
+                <p class="text-gray-500">Elgato is a leading brand in gaming and content creation gear, offering
+                    high-quality capture cards, stream decks, microphones, and lighting solutions to enhance live
+                    streaming and video production.</p>
+
+                <div class="flex space-x-6">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-tiktok text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-twitter text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-youtube text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-github text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-telegram text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+                </div>
+
+                <!-- newsletter -->
+                <div class="space-y-2">
+                    <div class="flex border border-black rounded-md overflow-hidden">
+                        <input type="email" placeholder="Email for Newsletter"
+                            class="w-full px-2 py-2 focus:outline-none">
+                        <button class="bg-black text-white px-2 py-2 hover:bg-gray-800 transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer links -->
+            <!-- Footer links -->
+            <div class="col-span-2 gap-10">
+
+                <div class="grid grid-cols-3 gap-8 pl-36">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Company</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">About</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Careers</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Media Room</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sustainibility</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">FAQ</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Contact</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Spare Parts</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Downloads</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Business</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Business Solution</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Contact Form</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Customization</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer links -->
+
+
+
+
+
+
+</body>
+
+</html>

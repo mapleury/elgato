@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elgato | Stream Setups</title>
+
+    <!-- web icon -->
+    <link rel="icon" href="/assets/elgato.png" type="image/png">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/output.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="py-3 bg-white border border-b-2 z-10">
+        <div class="container flex items-center justify-start">
+
+            <div class="flex py-3 items-center">
+                <!-- Logo -->
+                <a href="">
+                    <img src="/assets/logo.svg" alt="Logo" class="w-full h-full">
+                </a>
+
+            </div>
+
+
+            <!-- Search bar -->
+            <div class="w-full max-w-xl flex items-start mr-96 relative text-gray-700 group">
+                <span
+                    class="absolute left-4 top-4 transition-all duration-300 group-hover:left-4 group-hover:top-4 group-hover:text-gray-500">
+                    <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+                </span>
+                <input type="text" placeholder="Search"
+                    class="w-0 opacity-0 border-primary border border-r-0 rounded-l-full pl-12 py-3 focus:border-red-900 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                <button
+                    class="bg-primary h-12 rounded-r-full border border-primary text-white px-4 opacity-0 transition-all duration-500 group-hover:opacity-100">Search</button>
+            </div>
+
+
+            <!-- Icon -->
+            <div class="items-center flex space-x-4 ms-96">
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+
+
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="">
+        <div class="container flex">
+            <!-- all categories -->
+            <div class="bg-black px-8 py-4 rounded-b-md
+             items-center cursor-pointer relative group pt-10 z-30">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white text-xl">All Categories</span>
+
+                <!-- Dropdown -->
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 group-hover:transition duration-300 
+                    invisible group-hover:visible rounded-b-xl">
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-headphones" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Wave Audio</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-video" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">FaceCam</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-desktop" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Setups</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Navbar link -->
+            <div class="flex justify-between items-center flex-grow pl-1 pt-8">
+                <div class="flex items-center space-x-6 capitalize">
+                    <!-- Home link -->
+                    <a href="/src/index.html" class="ms-10 text-xl text-gray-900 relative overflow-hidden group">
+                        Home
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Setups link (active) -->
+                    <a href="setup.html" class="text-xl text-gray-900 relative overflow-hidden group active:text-black">
+                        Setups
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Marketplace link -->
+                    <a href="/src/shop.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Marketplace
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Contact link -->
+                    <a href="contact.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- Login/Register button -->
+                <a class="text-primary hover:bg-primary font-oswald text-lg tracking-wide border-2 rounded-md border-primary hover:bg-opacity-10 py-3 px-5 transition"
+                    href="login.html">Login/Register</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+
+
+    <!-- breadcrumbss -->
+    <div class="container flex py-4 items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Detail</p>
+        <!-- end bread -->
+    </div>
+
+    <!-- Produk view -->
+
+    <div class="container grid grid-cols-2 gap-6">
+        <!-- product image -->
+        <div>
+            <img src="/assets/products/product1.jpg" alt="" class="w-full">
+
+            <div class="grid grid-cols-5 gap-4 mt-4">
+                <img src="/assets/products/product2.jpg" alt=""
+                    class="w-full cursor-pointer border-primary border border-5">
+                <img src="/assets/products/product3.jpg" alt="" class="w-full cursor-pointer">
+                <img src="/assets/products/product4.jpg" alt="" class="w-full cursor-pointer">
+                <img src="/assets/products/product5.jpg" alt="" class="w-full cursor-pointer">
+                <img src="/assets/products/product6.jpg" alt="" class="w-full cursor-pointer">
+            </div>
+
+            <!-- end product image -->
+
+
+        </div>
+
+        <!-- product view content -->
+        <div>
+            <h2 class="text-3xl font-medium uppercase">STREAM CAM — META NEO</h2>
+
+            <div class="flex items-center mb-4">
+                <div class="text-yellow-500 flex gap-1">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                </div>
+                <div class="text-xs text-gray-400 ml-3">(168K Reviews)</div>
+            </div>
+
+            <div class="space-y-2">
+                <p class="space-x-2 font-semibold text-gray-800">
+                    <span>Availability:</span>
+                    <span class="text-green-600">In Stock</span>
+                </p>
+
+                <p class="space-x-2 font-semibold text-gray-800">
+                    <span>Brand:</span>
+                    <span class="text-gray-600 font-normal">Elgato NEO</span>
+                </p>
+
+                <p class="space-x-2 font-semibold text-gray-800">
+                    <span>Category:</span>
+                    <span class="text-gray-600 font-normal">Game Capture</span>
+                </p>
+
+                <p class="space-x-2 font-semibold text-gray-800">
+                    <span>SKU:</span>
+                    <span class="text-gray-600 font-normal">4DY6UF9</span>
+                </p>
+            </div>
+
+            <div class="pt-10 pb-3">
+                <a href="">
+                    <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">STREAM
+                        1086R</h4>
+                </a>
+                <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                    <p class="text-xl text-primary font-semibold">$258.000</p>
+                    <p class="text-gray-400 text-sm line-through">$359.000</p>
+                </div>
+
+
+            </div>
+
+            <p class="mt-6 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, culpa rerum
+                repudiandae animi in quidem incidunt accusantium iste minus ipsam.</p>
+
+
+            <!-- Size filter -->
+            <div class="pt-4">
+                <h3 class="text-md text-gray-800 mb-3 uppercase font-semibold">Size</h3>
+            </div>
+
+            <div class="items-center gap-3 flex">
+
+                <div class="size-selector">
+                    <input type="radio" name="size" id="size-xs" class="hidden">
+                    <label for="size-xs"
+                        class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">XS</label>
+
+                </div>
+
+                <div class="size-selector">
+                    <input type="radio" name="size" id="size-s" class="hidden">
+                    <label for="size-s"
+                        class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">S</label>
+                </div>
+
+                <div class="size-selector">
+                    <input type="radio" name="size" id="size-m" class="hidden">
+                    <label for="size-m"
+                        class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">M</label>
+                </div>
+
+                <div class="size-selector">
+                    <input type="radio" name="size" id="size-l" class="hidden">
+                    <label for="size-l"
+                        class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">L</label>
+                </div>
+
+                <div class="size-selector">
+                    <input type="radio" name="size" id="size-xl" class="hidden">
+                    <label for="size-xl"
+                        class="text-sm border border-gray-200 rounded-sm h-6 w-6 flex items-center justify-center cursor-pointer shadow-sm text-gray-800">XL</label>
+                </div>
+
+            </div>
+
+
+            <!-- Color filter -->
+
+            <div>
+                <div class="pt-4">
+                    <h3 class="text-md text-gray-800 mb-3 uppercase font-semibold">Color</h3>
+                </div>
+                <div class="color-selector items-center gap-2 flex">
+                    <!--Single color -->
+
+                    <div>
+                        <input type="radio" id="red" class="hidden">
+                        <label for="red"
+                            class="border border-gray-200 h-5 w-5 block rounded-sm cursor-pointer bg-red-600"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="yellow" class="hidden">
+                        <label for="yellow"
+                            class="border border-gray-200 h-5 w-5 block rounded-sm cursor-pointer bg-yellow-300"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="green" class="hidden">
+                        <label for="green"
+                            class="border border-gray-200 h-5 w-5 block rounded-sm cursor-pointer bg-green-300"></label>
+                    </div>
+                    <div>
+                        <input type="radio" id="blue" class="hidden">
+                        <label for="blue"
+                            class="border border-gray-200 h-5 w-5 block rounded-sm cursor-pointer bg-blue-400"></label>
+                    </div>
+
+                    <!-- end single color -->
+                </div>
+
+
+            </div>
+
+
+            <!-- End Color Filter -->
+
+            <!-- quanitit -->
+            <div class="mt-3">
+                <h3 class="text-md text-gray-800 mb-3 uppercase font-semibold">Quantity</h3>
+
+                <div class="flex mt-3 border border-gray-300 divide-x divide-gray-300 w-max">
+                    <div class="h-6 w-6 text-sm flex items-center cursor-pointer justify-center">-</div>
+                    <div class="h-6 w-6 text-sm flex items-center cursor-pointer justify-center">2</div>
+                    <div class="h-6 w-6 text-sm flex items-center cursor-pointer justify-center">+</div>
+                </div>
+
+                <div class="flex mt-6 gap-3 border-b border-gray-500">
+
+                    <div
+                        class="bg-primary border-primary border px-8 py-2 font-medium uppercase text-white flex items-center justify-center gap-2  hover:text-primary hover:bg-transparent transition">
+                        <a href="checkout.html">
+                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                        </a>
+                    </div>
+
+                    <div
+                        class="bg-transparent border-primary border px-8 py-2 font-medium uppercase text-primary flex items-center justify-center gap-2  hover:text-white hover:bg-primary transition">
+                        <a href="">
+                            <i class="fa-solid fa-heart"></i>Wishlist
+                        </a>
+                    </div>
+
+                </div>
+
+                <div>
+                    <!-- social share -->
+                    <div class="flex gap-3 mt-4">
+                        <a href=""
+                            class=" text-gray-400 hover:text-gray-500 transition h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href=""
+                            class=" text-gray-400 hover:text-gray-500 transition h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href=""
+                            class=" text-gray-400 hover:text-gray-500 transition h-8 w-8 rounded-full border border-gray-300 flex items-center justify-center">
+                            <i class="fa-brands fa-tiktok"></i>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- quanitit -->
+        </div>
+        <!-- End size filter -->
+
+
+
+
+
+    </div>
+
+    </div>
+
+    <!-- end product view -->
+
+    <div class="container pb-16">
+
+        <h3 class="border-b border-gray-200 font-medium pb-3 text-gray-800 mt-20 mb-10 text-3xl">Product Details</h3>
+        <div class="w-3/5">
+            <div class="space-y-3 text-gray-600">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe repellendus debitis aliquid,
+                    quasi iure velit earum voluptas odio nostrum enim maiores nemo porro.</p>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe repellendus debitis aliquid,
+                    quasi iure velit earum voluptas odio nostrum.</p>
+            </div>
+
+            <table class="table-auto border-collapse w-full text-left text-gray-800 text-sm mt-6">
+                <tr>
+                    <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Color</th>
+                    <td class="border border-gray-300 py-2 px-4 font-medium">Black, Blue</td>
+
+                </tr>
+
+                <tr>
+                    <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Pixels</th>
+                    <td class="border border-gray-300 py-2 px-4 font-medium">13948, Hue Saturated</td>
+
+                </tr>
+
+                <tr>
+                    <th class="border border-gray-300 py-2 px-4 w-40 font-medium">Community</th>
+                    <td class="border border-gray-300 py-2 px-4 font-medium">Discord, Slack, Twitch</td>
+
+                </tr>
+            </table>
+        </div>
+
+
+
+
+    </div>
+    <!-- product detail -->
+
+
+
+    <!-- end product detail -->
+
+
+
+    <div class="container pt-16">
+
+        <h2 class="text-5xl font-medium text-gray-800 uppercase mb-20 mt-30 animate-bounce">Related Products</h2>
+        <!-- Product grid -->
+
+
+
+
+        <div class="grid grid-cols-5 gap-6 pb-36">
+            <!-- single product -->
+            <div class="bg-white shadow rounded-3xl overflow-hidden group">
+
+                <div class="relative">
+                    <img src="/assets/arrival/arrival1.jpg" class="w-full" alt="">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- dekskripsi produk -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            FaceCam NEO</h4>
+                    </a>
+                    <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$390.000</p>
+                        <p class="text-gray-400 text-sm line-through">$420.000</p>
+                    </div>
+
+                    <!-- rating -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-1">(159K)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="" class="block bg-primary uppercase w-full py-2 text-center rounded-b-3xl text-white border-2 border-primary hover:bg-white hover:text-primary
+                transition">Add to Cart</a>
+                </div>
+            </div>
+            <!-- end single product -->
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded-3xl overflow-hidden group">
+
+                <div class="relative">
+                    <img src="/assets/arrival/arrival5.jpg" class="w-full" alt="">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- dekskripsi produk -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">WAVE
+                            CORE NEO</h4>
+                    </a>
+                    <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$367.000</p>
+                        <p class="text-gray-400 text-sm line-through">$419.000</p>
+                    </div>
+
+                    <!-- rating -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-1">(187K)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="" class="block bg-primary uppercase w-full py-2 text-center rounded-b-3xl text-white border-2 border-primary hover:bg-white hover:text-primary
+                transition">Add to Cart</a>
+                </div>
+            </div>
+            <!-- end single product -->
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded-3xl overflow-hidden group">
+
+                <div class="relative">
+                    <img src="/assets/arrival/arrival2.jpg" class="w-full" alt="">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- dekskripsi produk -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            TWITCH GAME CAPTURE</h4>
+                    </a>
+                    <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$240.000</p>
+                        <p class="text-gray-400 text-sm line-through">$296.000</p>
+                    </div>
+
+                    <!-- rating -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-1">(177K)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="" class="block bg-primary uppercase w-full py-2 text-center rounded-b-3xl text-white border-2 border-primary hover:bg-white hover:text-primary
+                transition">Add to Cart</a>
+                </div>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded-3xl overflow-hidden group">
+
+                <div class="relative">
+                    <img src="/assets/arrival/arrival3.jpg" class="w-full" alt="">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- dekskripsi produk -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            TWITCH GAME CAPTURE</h4>
+                    </a>
+                    <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$240.000</p>
+                        <p class="text-gray-400 text-sm line-through">$296.000</p>
+                    </div>
+
+                    <!-- rating -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-1">(177K)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="" class="block bg-primary uppercase w-full py-2 text-center rounded-b-3xl text-white border-2 border-primary hover:bg-white hover:text-primary
+                transition">Add to Cart</a>
+                </div>
+            </div>
+            <!-- end single product -->
+
+
+            <!-- single product -->
+            <div class="bg-white shadow rounded-3xl overflow-hidden group">
+
+                <div class="relative">
+                    <img src="/assets/arrival/arrival4.jpg" class="w-full" alt="">
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                        <a href=""
+                            class="text-white text-lg w-9 h-9 bg-primary rounded-full flex justify-center items-center hover:bg-gray-800 transition">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- dekskripsi produk -->
+                <div class="pt-4 pb-3 px-4">
+                    <a href="">
+                        <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition">
+                            TWITCH GAME CAPTURE</h4>
+                    </a>
+                    <div class="flex gap-2 items-baseline mb-1 space-x-2 font-roboto">
+                        <p class="text-xl text-primary font-semibold">$240.000</p>
+                        <p class="text-gray-400 text-sm line-through">$296.000</p>
+                    </div>
+
+                    <!-- rating -->
+                    <div class="flex items-center gap-2">
+                        <div class="flex gap-1 text-yellow-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="text-xs text-gray-500 ml-1">(177K)</div>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="" class="block bg-primary uppercase w-full py-2 text-center rounded-b-3xl text-white border-2 border-primary hover:bg-white hover:text-primary
+                transition">Add to Cart</a>
+                </div>
+            </div>
+            <!-- end single product -->
+
+        </div>
+
+    </div>
+    <!-- End Product -->
+
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-white pt-12 pb-12 border-t border-gray-300">
+        <div class="container grid grid-cols-3">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img src="/assets/logo.svg" alt="">
+
+
+
+                <p class="text-gray-500">Elgato is a leading brand in gaming and content creation gear, offering
+                    high-quality capture cards, stream decks, microphones, and lighting solutions to enhance live
+                    streaming and video production.</p>
+
+                <div class="flex space-x-6">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-instagram text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-tiktok text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-twitter text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-linkedin-in text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-youtube text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-github text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-telegram text-gray-700 hover:text-gray-900 transition"></i>
+                    </a>
+                </div>
+
+                <!-- newsletter -->
+                <div class="space-y-2">
+                    <div class="flex border border-black rounded-md overflow-hidden">
+                        <input type="email" placeholder="Email for Newsletter"
+                            class="w-full px-2 py-2 focus:outline-none">
+                        <button class="bg-black text-white px-2 py-2 hover:bg-gray-800 transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer links -->
+            <!-- Footer links -->
+            <div class="col-span-2 gap-10">
+
+                <div class="grid grid-cols-3 gap-8 pl-36">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Company</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">About</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Careers</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Media Room</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Sustainibility</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">FAQ</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Contact</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Spare Parts</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Downloads</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mt-16">Business</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Business Solution</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Contact Form</a>
+                            <a href="#" class="text-base text-gray-400 hover:text-gray-900 block">Customization</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Footer links -->
+
+
+
+</body>
+
+</body>
+
+</html>

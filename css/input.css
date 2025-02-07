@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+body {
+    @apply font-poppins
+}
+h1,h2,h3,h4,h5 {
+    @apply font-oswald
+}
+}
+
+@layer components {
+    .size-selector input:checked + label{
+        @apply bg-primary text-white;
+    }
+
+
+    .color-selector input:checked + label{
+        @apply ring-2 ring-primary;
+    }
+}
+
+
+.animate-fade-up {
+    animation: fade-up 3s infinite;
+}
+
+.delay-2s {
+    animation-delay: 2s;
+}
+
+.delay-4s {
+    animation-delay: 4s;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-down {
+    animation: fade-down 2.5s infinite;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-3%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(1%);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 1.5s infinite;
+}
+
+
+.details {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hover\:group:hover .details {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes stretch {
+    0% {
+        transform: scaleX(1.02);
+    }
+    50% {
+        transform: scaleX(1); 
+    }
+    100% {
+        transform: scaleX(1.02);
+    }
+}
+
+.animate-stretch {
+    animation: stretch 1s ease-in-out infinite;
+}

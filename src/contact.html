@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elgato | Contact Us</title>
+
+    <!-- web icon -->
+    <link rel="icon" href="/assets/elgato.png" type="image/png">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/output.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="py-3 bg-white border border-b-2 z-10">
+        <div class="container flex items-center justify-start">
+
+            <div class="flex py-3 items-center">
+                <!-- Logo -->
+                <a href="">
+                    <img src="/assets/logo.svg" alt="Logo" class="w-full h-full">
+                </a>
+
+            </div>
+
+
+            <!-- Search bar -->
+            <div class="w-full max-w-xl flex items-start mr-96 relative text-gray-700 group">
+                <span
+                    class="absolute left-4 top-4 transition-all duration-300 group-hover:left-4 group-hover:top-4 group-hover:text-gray-500">
+                    <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+                </span>
+                <input type="text" placeholder="Search"
+                    class="w-0 opacity-0 border-primary border border-r-0 rounded-l-full pl-12 py-3 focus:border-red-900 transition-all duration-500 group-hover:w-full group-hover:opacity-100">
+                <button
+                    class="bg-primary h-12 rounded-r-full border border-primary text-white px-4 opacity-0 transition-all duration-500 group-hover:opacity-100">Search</button>
+            </div>
+
+
+            <!-- Icon -->
+            <div class="items-center flex space-x-4 ms-96">
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+
+
+                </a>
+
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <span class="text-2xl">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Start Navbar -->
+    <nav class="">
+        <div class="container flex">
+            <!-- all categories -->
+            <div class="bg-black px-8 py-4 rounded-b-md
+             items-center cursor-pointer relative group pt-10 z-30">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white text-xl">All Categories</span>
+
+                <!-- Dropdown -->
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 group-hover:transition duration-300 
+                    invisible group-hover:visible rounded-b-xl">
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-headphones" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Wave Audio</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-video" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">FaceCam</span>
+                    </a>
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100">
+                        <i class="fa-solid fa-desktop" class="w-5 h-5 object-contain"></i>
+                        <span class="text-gray-600 text-sm  ml-6">Setups</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Navbar link -->
+            <div class="flex justify-between items-center flex-grow pl-1 pt-8">
+                <div class="flex items-center space-x-6 capitalize">
+                    <!-- Home link -->
+                    <a href="/src/index.html" class="ms-10 text-xl text-gray-900 relative overflow-hidden group">
+                        Home
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Setups link (active) -->
+                    <a href="setup.html" class="text-xl text-gray-900 relative overflow-hidden group active:text-black">
+                        Setups
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Marketplace link -->
+                    <a href="/src/shop.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Marketplace
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                    </a>
+
+                    <!-- Contact link -->
+                    <a href="contact.html" class="text-xl text-gray-900 relative overflow-hidden group">
+                        Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-full h-0.5 bg-black transform scale-x-100 transition-transform duration-300"></span>
+                    </a>
+                </div>
+
+                <!-- Login/Register button -->
+                <a class="text-primary hover:bg-primary font-oswald text-lg tracking-wide border-2 rounded-md border-primary hover:bg-opacity-10 py-3 px-5 transition"
+                    href="login.html">Login/Register</a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- breadcrumbss -->
+    <div class="container flex py-4 items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fa-solid fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Contact</p>
+        <!-- end bread -->
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-36 bg-gray-100">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-7xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
+            <p class="text-gray-600 mb-8">Have a question? Fill out the form below.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto bg-white border-2 border-black rounded-lg p-8">
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium mb-2">Name</label>
+                    <input type="text" placeholder="Enter your name"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea rows="4" placeholder="Write your message here..."
+                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-primary text-white py-3 rounded-md font-medium hover:bg-opacity-80 transition-all duration-300">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
